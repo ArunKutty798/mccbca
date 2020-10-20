@@ -292,6 +292,7 @@ h1{
 }
 #questit{
 	margin:30px;
+	border-bottom:1px dashed #b5e853;
 }
 #events ul li{
 	font-size:30px;
@@ -369,8 +370,20 @@ h1{
 	  margin:0 auto;
 	}
   }
-  
-
+  /* Cards */
+  #cards{
+	  display:inline-flex;
+	  flex-wrap:wrap;
+	  margin-right: 35px;
+	  padding:10px;
+  }
+  .card-text{
+	  color:black;
+	  text-align: center;
+  }
+  /* .card-body{
+	  padding:0px;
+  } */
 footer{
 	border-top:1px dashed #b5e853; 
 	color:white;
