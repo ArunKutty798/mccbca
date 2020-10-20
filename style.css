@@ -48,11 +48,7 @@ body{
 	display:inline-block;
 	
   }
-  @media screen and (max-width:400px){
-	#header .logo img{
-	  display:none;
-	}
-  }
+  
 
 /*--------------------------------------------------------------
 # Navigation Menu
