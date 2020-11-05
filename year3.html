@@ -12,8 +12,8 @@
 </head>
 <body>
 	<!-- Header -->
-	<header id="header" style="background-color:#f3f3f3">
-		<div class="container" >
+	<header id="header" style="background-color:black">
+		<div style="background-color: black;" class="container" >
 	
 		  <div class="logo float-left" >
 		   
@@ -25,11 +25,11 @@
 	
 		  <nav class="nav-menu float-right d-none d-lg-block" >
 			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="year1.html">Year1</a></li>
-			  <li><a href="year2.html">Year2</a></li>
+			  <li><a href="home.html">Home</a></li>
+			  <li><a href="error/error.html">Year1</a></li>
+			  <li><a href="error/error.html">Year2</a></li>
 			  <li class="active"><a href="year3.html">Year3</a></li>
-			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="contact.html">Contact</a></li>
 			
 			</ul>
 		  </nav>
@@ -39,10 +39,17 @@
 		</div>
 	  </header>
     <!-- End of header -->
-
-    <!-- Video -->
+    <!-- Marquee  -->
+    <div>
+      <marquee style="color: white;">* LIVE LOVE MCC *               *LIVE LOVE CODING*</marquee>
+    </div>
+   
+      
+  
+    
+    <!-- Video  -->
     <div id="video">
-        <video class="center" width="600" height="400" controls autoplay>
+        <video class="center" width="600" height="400" controls autoplay muted>
             <source src="video.mp4" type="video/mp4">
             
           Your browser does not support the video tag.
@@ -85,24 +92,304 @@
         </div> -->
       </div>
    </section>
+   <!-- Time table -->
+   <section id="timetable">
+     <h1>Time Table</h1>
+    <table class="redTable">
+      <thead>
+      <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      </tr>
+      </thead>
+      <tfoot>
+      <tr>
+      <td colspan="6">
+      <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+      </td>
+      </tr>
+      </tfoot>
+      <tbody>
+      <tr>
+      <td>VB</td>
+      <td>VB</td>
+      <td>VB</td>
+      <td>VB</td>
+      <td>DBMS</td>
+      <td>DBMS</td>
+      </tr>
+      <tr>
+      <td>C# LAB</td>
+      <td>DBMS</td>
+      <td>C# LAB</td>
+      <td>C#</td>
+      <td>C#</td>
+      <td>C# LAB</td>
+      </tr>
+      <tr>
+      <td>C#</td>
+      <td>SNA LAB</td>
+      <td>C#</td>
+      <td>VB LAB</td>
+      <td>SNA LAB</td>
+      <td>C# LAB</td>
+      </tr>
+      <tr>
+      <td>GE LAB</td>
+      <td>VB</td>
+      <td>GE</td>
+      <td>C#</td>
+      <td>GE</td>
+      <td>VB LAB</td>
+      </tr>
+      <tr>
+      <td>VB LAB</td>
+      <td>C# LAB</td>
+      <td>C# LAB</td>
+      <td>DBMS</td>
+      <td>DBMS</td>
+      <td>GE LAB</td>
+      </tr>
+      </tbody>
+      </table>
+   </section>
    <!-- Study Materials -->
    <section id="study">
      <div>
-       <h1>Study Resources</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima eligendi porro fugit et ullam dolores, quo aut suscipit quasi, sunt iure labore quod totam adipisci. Illo accusantium deserunt nisi?</p>
-     </div>
+       <h1>Subjects</h1><br>
+       <h2>Visual Studio</h2>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+        Syllabus
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="color:black" id="exampleModalLabel">C#Syllabus</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe src="Syllabus1.pdf" width="100%" height="300" style="border:1px solid black;">
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+        Youtube
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="color:black" id="exampleModalLabel">Visual Studio </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 style="color:black">English</h2>
+              <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLC601DEA22187BBF1">New Boston</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIYLpgVN_CpXbkOQoYJTItzg">ProgrammingKnowledge</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLGLfVvz_LVvTr9wMK6f9lTzOzSX6a6Pk-">DerekBanas</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL42055376AE25291E">Teach Me Computer</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLC3y8-rFHvwhleivq1QohBZN4d8IdzG3c">CodeEvolution</a></li>
+
+              </ul>
+              <h2 style="color:black">Tamil</h2>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=nWy9GjaGCYI">TechonzTech</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hfqqRUAXCC0&list=PLIFRUdRwOM0-TvOqhFfk33LSqaIVBltIl">Santra Techspot</a></li>
+                
+              </ul>
+              <h2 style="color:black">Crash Course</h2>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=WPqXP_kLzpo">Freecodecamp.org</a></li>
+                
+              </ul>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <a href="https://visualstudio.microsoft.com/vs/getting-started/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
+        <a href="#" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a><br>
+        <br>
+
+        <!-- DBMS -->
+        <h2 style="color:white">DBMS</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+          Syllabus
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" style="color:black" id="exampleModalLabel">DBMS Syllabus</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <iframe src="Syllabus2.pdf" width="100%" height="300" style="border:1px solid black;">
+                </iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+          Youtube
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" style="color:black" id="exampleModalLabel">DBMS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 style="color:black">English</h2>
+                <ul>
+                  <li><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc">Jenny's Lecture</a></li>
+                  <li><a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpMGXTKXsBM_ZNpJwowfsP49">Mike Dane</a></li>
+                  <li><a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpHMw9bRo47tn4aknBUvuXNU">Tutorials Point</a></li>
+                  <li><a href="https://www.youtube.com/playlist?list=PL9RcWoqXmzaLIhRjV8bKl7krh0AJSHkLw">GateAcademyPlus</a></li>
+                  
+  
+                </ul>
+                <h2 style="color:black">Tamil</h2>
+                <ul>
+                  <li><a href="https://www.youtube.com/playlist?list=PLN00Qh4gtjNucB3vvNqPWFQOJWmnzkxle">Programming Line</a></li>
+                  <li><a href=""></a></li>
+                  
+                </ul>
+                <h2 style="color:black">Crash Course</h2>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY">Freecodecamp.org</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY">Edureka</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=HplWQn-rXdk&t=1896s">Vetri bright</a></li>                  
+                </ul>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               
+              </div>
+            </div>
+          </div>
+  
+  
+          <a href="https://dev.mysql.com/doc/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
+          <a href="https://drive.google.com/file/d/1U_RfAEUNTDOTkvBF97fhfOuiFW2z5Vc9/view" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a>
+          <br>
+          <br>
+
+          <!-- SNA -->
+          <h2 style="color:white">SNA</h2>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+            Program
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" style="color:black" id="exampleModalLabel">SNA Programs</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="Program.pdf" width="100%" height="300" style="border:1px solid black;">
+                  </iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      </div>
    </section>
    <!-- Question Paper -->
    <section id="paper">
     <div>
       <h1>Question Papers</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum qui tenetur laborum repellendus temporibus. Officia culpa magnam, harum voluptatum, quaerat, adipisci suscipit autem animi commodi illo fuga aliquam doloremque quis?</p>
+      
+      
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6">
+        2016
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="color:black" id="exampleModalLabel">SNA Programs</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe src="2016.pdf" width="100%" height="300" style="border:1px solid black;">
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
    <!-- Footer -->
    <footer>
-		<p>Made with love by Arun Kutty</p>
+		<p>Made by Arun Kutty</p>
 	</footer>
    
+
+  <!-- script tags -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -4,18 +4,20 @@
 	margin:0px;
 }
 body{
-	background-color:#f3f3f3;
-	color:#151515;
+	color:#fff;
+	
+	background-color:#151515;
+
 }
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-	height: 76px;
+	height: 93px;
 	transition: all 0.5s;
 	transition: all 0.5s;
-	padding: 10px 0;
-	background: #fff;
+	padding:  10px 0;
+	background: #000000;
 	z-index: 997;
   }
   
@@ -36,7 +38,7 @@ body{
   }
   
   #header .logo h1 a, #header .logo h1 a:hover {
-	color: #1c5c93;
+	color:#f3f3f3;
 	text-decoration: none;
 	
   }
@@ -58,7 +60,7 @@ body{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	;
+	
   }
   
   .nav-menu > ul > li {
@@ -270,19 +272,57 @@ h1{
 	text-align: center;
 	font-size: 50px;
 }
-#intro{
-	isolation:isolate;
-	margin:50px 30px;
-	font-size:30px;
-	border-bottom:1px dashed red;
-	color:red;
+#bg{
+	background-image:url(bg5.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: right;
+	width:100%;
+	height:100vh;
 	
 }
+#intro{
+	
+	
+	padding:10px;
+	width:50%;
+	background-color: white;
+	
+	margin:5px 35px;
+	font-size:20px;
+	/* font-weight:bold; */
+	border-bottom:1px dashed red;
+	color:black;
+	
+
+	
+}
+#content{
+	width:60%;
+	background-color:#f3f3f3;
+	padding:20px;
+}
+/* #parallax{
+	background:url(.jpg) repeat fixed 100%;
+} */
 #staff{
 	border-bottom:3px dashed #b5e853;
 }
+#flex-container{
+	display:flex;
+}
+#list{
+	flex:1;
+	width:40%;
+	margin-right: 10px;
+	background-color:white;
+	color:black;
+	clear:both;
+	margin-bottom:10px;
+
+}
 .staff-list li{
-	font-size:30px;
+	font-size:20px;
 	text-align:center;
 	list-style-type:none;
 	margin-bottom: 20px;
@@ -424,7 +464,7 @@ footer{
 }
 
 /* style inputs and link buttons */
-input,
+/* input,
 .btn {
   width: 100%;
   padding: 12px;
@@ -436,7 +476,7 @@ input,
   font-size: 17px;
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
-}
+} */
 
 input:hover,
 .btn:hover {
@@ -536,3 +576,57 @@ input[type=submit]:hover {
 }
 
 
+/* table css */
+table.redTable {
+	border: 2px solid #A40808;
+	background-color: #EEE7DB;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	color:black;
+  }
+  table.redTable td, table.redTable th {
+	border: 1px solid #AAAAAA;
+	padding: 10px 8px;
+  }
+  table.redTable tbody td {
+	font-size: 13px;
+  }
+  table.redTable tr:nth-child(even) {
+	background: #F5C8BF;
+  }
+  table.redTable thead {
+	background: #A40808;
+  }
+  table.redTable thead th {
+	font-size: 19px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	border-left: 2px solid #A40808;
+  }
+  table.redTable thead th:first-child {
+	border-left: none;
+  }
+  
+  table.redTable tfoot {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: #A40808;
+  }
+  table.redTable tfoot td {
+	font-size: 16px;
+  }
+  table.redTable tfoot .links {
+	text-align: right;
+  }
+  table.redTable tfoot .links a{
+	display: inline-block;
+	background: #FFFFFF;
+	color: #A40808;
+	padding: 2px 8px;
+	border-radius: 5px;
+  }
+
+  

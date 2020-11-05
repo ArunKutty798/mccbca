@@ -1,3 +1,8 @@
+<?php 
+	
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,11 +15,20 @@
 	<!-- Google font link -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+		<script type="text/javascript">
+		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+		{widgetcode:"4411ef9470be24e11c0f277185754269a0c92fdadc8a3797147f726d54d00b991a2010ab7b6727677d37b27582c0e9c4", values:{},ready:function(){}};
+		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+		s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+		</script>
+		
 </head>
 <body>
 	<!-- Header -->
-	<header id="header" style="background-color:#f3f3f3">
-		<div class="container" >
+	<header id="header" >
+		<div class="container" style="background-color:black ;">
 	
 		  <div class="logo float-left" >
 		   
@@ -27,7 +41,7 @@
 		  <nav class="nav-menu float-right d-none d-lg-block" >
 			<ul>
 			  <li class="active"><a href="index.html">Home</a></li>
-			  <li class="disabled"><a href="year1.html">Year1</a></li>
+			  <li class="disabled"><a href="error/error.html">Year1</a></li>
 			  <li class="disabled"><a href="year2.html">Year2</a></li>
 			  <li><a href="year3.html">Year3</a></li>
 			  <li><a href="contact.html">Contact</a></li>
@@ -65,70 +79,90 @@
 		</a>
 	  </div>
 	  <!-- Intro -->
-	<div id="intro">
-		<h1 data-aos="fade-up"  data-aos-delay="2000" data-aos-duration="3000">BCA MCC</h1>
-		<p  data-aos="fade-up"  data-aos-delay="2000" data-aos-duration="3000">Commenced in 2001, the Department of Computer Application envisions imparting high eminence skills in software Development to excel in Software Industry and to train the students to develop the soft skills with global standards and enhance their knowledge in Information Technology. The department aims to develop academically competent and professionally motivated personals, equipped with objective and critical thinking that compassionately foster the scientific temper with a sense of social responsibility.</p>
-
-		<p data-aos="fade-up"  data-aos-delay="2000" data-aos-duration="3000"> The Department aims at providing high quality training to students through the latest in computer technology. In order to maintain the standard of education, the department constantly   upgrades the academic syllabi so as to keep the students well trained to deal with changing   trends in the field of Computer Science and Technology. The syllabi and courseware are planned to be flexible and wide-ranging, incorporating the cutting edge as well as ensuring a firm grasp of core fundamentals.</p>
-
-		<p data-aos="fade-up"  data-aos-delay="1000" data-aos-duration="2000">The department has a good record, as many students have been placed well in good IT Companies through campus placement. The curriculum and the lab training help the students in acquiring excellence in their career.</p>
-	</div>
-	<!-- Staffs section -->
-	<section>
-		<div id="staff">
-			<h1>STAFFS</h1>
-			<ul class="staff-list">
-				<li>D.Sathyapriya(Mrs),MCA,MPhil-Head of the department</li>
-				<li>P.Persis Glory(Mrs)MCA,MPhil-Assistant Professor</li>
-				<li>E.Mahima Jane(Mrs),MCA,MPhil-Assistant Professor</li>
-				<li>D.Padma Prabha(Mrs),MCA,MPhil.,Assistant Professor</li>
-				<li>E.Punithavathy(Mrs),MCA - Assistant Professor</li>
-				<li>G.Shobana(Mrs)M.E,MCA,MPhil,M.A,M.Sc-Assistant Professor</li>
-				<li>G.Shimi(Mrs), M.C.A., M.Phil.-Assistant Professor</li>
-				<li>R. Padmamala (Mrs), M.C.A., Ph.D., PGDNLP-Assistant Professor</li>
-				<li>E. Sweetline Priya (Mrs), M.C.A-Assistant Professor</li>
-				<li>T. Lavanya Suja (Mrs), M.C.A., M.Phil.-Assistant Professor</li>
-			</ul>
-		</div>
-
-
-	</section>		
-
-	<!--  -->
-	<div id="syllabus">
-		<h1>SYLLABUS</h1>
-	<ul>
-		<p style="text-align: center;font-size:25px;"><a href="https://www.mcc.edu.in/images/Curriculum/Self_financed/bca-sfs.pdf">Syllabus-</a>Click the link to view the syllabus</p>
-	</ul>
-	</div>
-	<!-- Quesit -->
-	<div id="questit">
-		<h1>Department Event</h1>
-		<div style="display:inline-block"id="img-container">
-			<img src="questit.jpeg">
-		</div>
-		<div id="events" style="display:inline-block">
-			<!-- <ul>
-				<li>Paper Presentation</li>
-				<li>Meme Creation</li>
-				<li>Treasure Hunt</li>
-				<li>Debugging</li>
-				<li>Face Painting</li>
-				<li>Quiz</li>
+	  <section id="bg">
+		  <div id="intro">
+			  <h2 style="text-align: center;">BCA-MCC</h2>
+			<p>Commenced in 2001, the Department of Computer Application envisions imparting high eminence skills in software Development to excel in Software Industry and to train the students to develop the soft skills with global standards and enhance their knowledge in Information Technology. </p>
+			<p>The department aims to develop academically competent and professionally motivated personals, equipped with objective and critical thinking that compassionately foster the scientific temper with a sense of social responsibility</p>
+			<p>
+				The Department aims at providing high quality training to students through the latest in computer technology. In order to maintain the standard of education, the department constantly   upgrades the academic syllabi so as to keep the students well trained to deal with changing   trends in the field of Computer Science and Technology. 
+			</p>
+			<p>The syllabi and courseware are planned to be flexible and wide-ranging, incorporating the cutting edge as well as ensuring a firm grasp of core fundamentals.</p>
+			
+		  </div>
+	  </section>
+		
+			
+		<!-- Staffs section -->
+		
+			<section id="staff">
+				<h1>STAFFS</h1>
+				<div id="flex-container">
+					<div id="image-container">
+						<img style="width:80%;margin-left: 10px;margin-top:30px;"src="teach.png">
+					</div>
+					<div id="list">
+						<ul class="staff-list">
+						<li>D.Sathyapriya(Mrs),MCA,MPhil-Head of the department</li>
+						<li>P.Persis Glory(Mrs)MCA,MPhil-Assistant Professor</li>
+						<li>E.Mahima Jane(Mrs),MCA,MPhil-Assistant Professor</li>
+						<li>D.Padma Prabha(Mrs),MCA,MPhil.,Assistant Professor</li>
+						<li>E.Punithavathy(Mrs),MCA - Assistant Professor</li>
+						<li>G.Shobana(Mrs)M.E,MCA,MPhil,M.A,M.Sc-Assistant Professor</li>
+						<li>G.Shimi(Mrs), M.C.A., M.Phil.-Assistant Professor</li>
+						<li>R. Padmamala (Mrs), M.C.A., Ph.D., PGDNLP-Assistant Professor</li>
+						<li>E. Sweetline Priya (Mrs), M.C.A-Assistant Professor</li>
+						<li>T. Lavanya Suja (Mrs), M.C.A., M.Phil.-Assistant Professor</li>
+					</ul>
+				</div>
+				</div>
 				
-			</ul> -->
-			<h3>Paper Presentation</h3>
-			<h3>Treasure Hunt</h3>
-			<h3>Face Painting</h3>
-			<h3>Quiz</h3>
-			<h3>Treasure Hunt</h3>
-			<h3>Meme Creation</h3>
-			<!-- <h3>Gaming</h3>
-			<h3>Group Singing</h3>
-			<h3>Coding</h3> -->
-
+		</section>
+				
+	<br>
+	<br>
+	
+				
+	
+		<!--  -->
+		<div id="syllabus">
+			<h1>SYLLABUS</h1>
+		<ul>
+			<!-- <p style="text-align: center;font-size:25px;"><a href="https://www.mcc.edu.in/images/Curriculum/Self_financed/bca-sfs.pdf">Syllabus-</a>Click the link to view the syllabus</p> -->
+			<iframe src="pdf.html" width="100%" height="300" style="border:1px solid black;">
+			</iframe>
+		</ul>
 		</div>
-	</div>
+		<!-- Quesit -->
+		<div id="questit">
+			<h1>Department Event</h1>
+			<div style="display:inline-block"id="img-container">
+				<img src="questit.jpeg">
+			</div>
+			<div id="events" style="display:inline-block">
+				<!-- <ul>
+					<li>Paper Presentation</li>
+					<li>Meme Creation</li>
+					<li>Treasure Hunt</li>
+					<li>Debugging</li>
+					<li>Face Painting</li>
+					<li>Quiz</li>
+					
+				</ul> -->
+				<h3>Paper Presentation</h3>
+				<h3>Treasure Hunt</h3>
+				<h3>Face Painting</h3>
+				<h3>Quiz</h3>
+				<h3>Treasure Hunt</h3>
+				<h3>Meme Creation</h3>
+				<!-- <h3>Gaming</h3>
+				<h3>Group Singing</h3>
+				<h3>Coding</h3> -->
+	
+			</div>
+		</div>
+	  
+	
 	<!-- Convenors -->
 	<section >
 		<h1>Convenors</h1>
@@ -212,6 +246,8 @@
 	<footer>
 		<p>Made with love by Arun Kutty</p>
 	</footer>
+	
+	</body>
 	<!-- Script tags -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -222,15 +258,16 @@
 <script>
 	AOS.init();
   </script>
+  
   <!-- Dark mode js -->
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
   function addDarkmodeWidget() {
     new Darkmode().showWidget();
   }
   window.addEventListener('load', addDarkmodeWidget);
-</script>
-<script src="mian.js">
+</script> -->
+<script src="main.js">
 </script>
 </body>
 </html>
