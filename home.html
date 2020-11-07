@@ -93,6 +93,9 @@
 	  </section>
 		
 	<!-- Admisssion Procedure -->
+	<div>
+		<p style="text-align: center;"><img src="admission.gif"></p>
+	</div>
 	<div id="syllabus">
 		<h1>Admission Procedure</h1>
 	<ul>
@@ -108,7 +111,7 @@
 				<h1>STAFFS</h1>
 				<div id="flex-container">
 					<div id="image-container">
-						<img style="width:80%;margin-left: 10px;margin-top:30px;"src="teach.png">
+						<img style="width:80%;margin-left: 20px;margin-top:30px;"src="teacher.gif">
 					</div>
 					<div id="list">
 						<ul class="staff-list">
@@ -141,32 +144,27 @@
 		
 		</div>
 		<!-- Quesit -->
-		<div id="questit">
+		<div id="questit" >
 			<h1>Department Event</h1>
-			<div style="display:inline-block"id="img-container">
-				<img src="questit.jpeg">
-			</div>
-			<div id="events" style="display:inline-block">
-				<!-- <ul>
-					<li>Paper Presentation</li>
-					<li>Meme Creation</li>
-					<li>Treasure Hunt</li>
-					<li>Debugging</li>
-					<li>Face Painting</li>
-					<li>Quiz</li>
+			<div style="display:flex;">
+				<div style="flex:1;margin-left:50px;"id="img-container">
+					<img src="party.gif">
+				</div>
+				<div id="events" style="flex:1">
 					
-				</ul> -->
-				<h3>Paper Presentation</h3>
-				<h3>Treasure Hunt</h3>
-				<h3>Face Painting</h3>
-				<h3>Quiz</h3>
-				<h3>Treasure Hunt</h3>
-				<h3>Meme Creation</h3>
-				<!-- <h3>Gaming</h3>
-				<h3>Group Singing</h3>
-				<h3>Coding</h3> -->
-	
+					<h3>Paper Presentation</h3>
+					<h3>Treasure Hunt</h3>
+					<h3>Face Painting</h3>
+					<h3>Quiz</h3>
+					<h3>Treasure Hunt</h3>
+					<h3>Meme Creation</h3>
+					<h3>Gaming</h3>
+					<h3>Group Singing</h3>
+					<h3>Coding</h3>
+		
+				</div>
 			</div>
+			
 		</div>
 	  
 	
@@ -245,9 +243,23 @@
 	<section id="asterican">
 		<div>
 			<h1>Asterican Association</h1>
+			<p style="text-align:center">
+			<img src="idea.gif">
+			</p>
+			
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laudantium numquam nisi nihil esse, repudiandae dolore. Perspiciatis quisquam numquam sint quae eveniet modi a eligendi, veritatis esse ipsum, corrupti tenetur?</p>
 		</div>
 	</section>
+	<div class="lightbox">
+		<div class="iframeContainer">
+		  <div class="toolbarLB">
+			<span class="closeLB" onclick="lightBoxClose()">x</span>
+		  </div>
+		  <iframe src="welcome.html" width="500" height="287" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+		  allowTransparency="true"></iframe>
+		  
+		</div>
+	  </div>
 
 	<!--  -->
 	<footer>
@@ -276,8 +288,13 @@
 </script> -->
 <script src="main.js">
 </script>
-<script data-cfasync="false">
+<!-- <script data-cfasync="false">
 	(function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site=r6bx3NMmgG','wisepops');
+	</script> -->
+	<script>
+		lightBoxClose = function() {
+  document.querySelector(".lightbox").classList.add("closed");
+}
 	</script>
 
 </body>
