@@ -23,6 +23,37 @@
 		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
 		s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 		</script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSc5mWvY0YXlxkBneG3Nkf9EwCdpCEiz0&callback=initMap&libraries=&v=weekly"
+defer
+></script>
+<style type="text/css">
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+</style>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+	zoom: 4,
+	center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+	position: uluru,
+	map: map,
+  });
+}
+</script>
 		
 </head>
 <body>
@@ -146,9 +177,9 @@
 		<!-- Quesit -->
 		<div id="questit" >
 			<h1>Department Event</h1>
-			<div style="display:flex;">
+			<div style="display:flex;margin-bottom: 30px;">
 				<div style="flex:1;margin-left:50px;"id="img-container">
-					<img src="party.gif">
+					<img style="width:80%"src="party.gif">
 				</div>
 				<div id="events" style="flex:1">
 					
@@ -166,6 +197,8 @@
 			</div>
 			
 		</div>
+		<br>
+		<br>
 	  
 	
 	<!-- Convenors -->
@@ -175,9 +208,9 @@
 			<div data-aos="flip-left"
 			data-aos-easing="ease-out-cubic"
 			data-aos-duration="2000" id="cards" class="card" style="width: 18rem">
-				<img
+				<img 
 				  src="chairman.jpeg"
-				  class="card-img-top"
+				  class="card-img-top "
 				  alt="..."
 				/>
 				<div class="card-body">
@@ -260,10 +293,13 @@
 		  
 		</div>
 	  </div>
-
+	  <!-- Location -->
+	  <!-- <h3>My Google Maps Demo</h3> -->
+    <!--The div element for the map -->
+    <!-- <div id="map"></div> -->
 	<!--  -->
 	<footer>
-		<p>Made with love by Arun Kutty</p>
+		<p>Website made by <span style="color:red">Arun Kutty</span> </p>
 	</footer>
 	
 	</body>

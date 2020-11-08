@@ -41,25 +41,27 @@
 	  </header>
     <!-- End of header -->
     <!-- Marquee  -->
-    <div>
-      <marquee style="color: white;">* LIVE LOVE MCC *               *LIVE LOVE CODING*</marquee>
+    <div style="width:100%;height:40px;background-color: red;">
+      <marquee style="color: white;font-weight: bold;font-size:20px"> LIVE LOVE MCC </marquee>
     </div>
    
-      
-  <div>
-    <p style="text-align:center">
-    <img src="video.gif">
-    </p>
-  </div>
-    
-    <!-- Video  -->
-    <div id="video">
-        <video class="center" width="600" height="400" controls autoplay muted>
-            <source src="video.mp4" type="video/mp4">
-            
-          Your browser does not support the video tag.
-          </video>
+   <div style="display:flex;">
+    <div style="flex:1;justify-content: center;align-items: center;">
+      <p style="text-align:center;">
+      <img style="position:relative;left:80px;top:80px;"src="video.gif">
+      </p>
     </div>
+      
+      <!-- Video  -->
+      <div style="flex:1" id="video">
+          <video class="center" width="600" height="400" controls autoplay muted>
+              <source src="video.mp4" type="video/mp4">
+              
+            Your browser does not support the video tag.
+            </video>
+      </div>
+   </div>   
+  
 
    <!--  -->
    <!-- Grid photos -->
@@ -166,8 +168,8 @@
    <section id="study" style="font-size:10px;">
      <div>
        <h1>Subjects</h1><br>
-       <h2>Visual Studio</h2>
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+       <h2 style="text-align: center;">Visual Studio</h2><br>
+       <button style="margin-left:120px;margin-right: 100px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
         Syllabus
       </button>
       
@@ -192,7 +194,7 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+      <button style="margin-left:100px;margin-right: 100px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
         Youtube
       </button>
       
@@ -237,13 +239,13 @@
         </div>
 
 
-        <a href="https://visualstudio.microsoft.com/vs/getting-started/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
-        <a href="#" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a><br>
+        <a style="margin-left:100px;margin-right: 70px;" href="https://visualstudio.microsoft.com/vs/getting-started/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
+        <a style="margin-left:100px;" href="#" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a><br>
         <br>
 
         <!-- DBMS -->
         <h2 style="color:white">DBMS</h2>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+        <button   style="margin-left:120px;margin-right: 100px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
           Syllabus
         </button>
         
@@ -268,7 +270,7 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+        <button  style="margin-left:120px;margin-right: 100px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
           Youtube
         </button>
         
@@ -314,14 +316,14 @@
           </div>
   
   
-          <a href="https://dev.mysql.com/doc/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
-          <a href="https://drive.google.com/file/d/1U_RfAEUNTDOTkvBF97fhfOuiFW2z5Vc9/view" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a>
+          <a  style="margin-left:120px;margin-right: 100px;"  href="https://dev.mysql.com/doc/" class="btn btn-primary btn-md " role="button" aria-disabled="true">Documentation</a>
+          <a  style="margin-left:120px;" href="https://drive.google.com/file/d/1U_RfAEUNTDOTkvBF97fhfOuiFW2z5Vc9/view" class="btn btn-primary btn-md " role="button" aria-disabled="true">Book</a>
           <br>
           <br>
 
           <!-- SNA -->
           <h2 style="color:white">SNA</h2>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+          <button style="align-items: center;"type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
             Program
           </button>
           
@@ -476,7 +478,7 @@
   <!-- Trends -->
   <div>
     <h1>Trend</h1>
-    <a href="trend.html">
+    <a href="card.html">
       <img src="trend.gif">
     </a>
   </div>

@@ -769,3 +769,11 @@ html {
   }
   .lightbox.closed {
 	display: none;
+  }
+
+  .cards img:hover{
+		width: 200px;
+		height: 200px;
+		transform: rotate(180deg);
+	  
+  }
